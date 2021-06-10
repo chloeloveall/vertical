@@ -15,16 +15,37 @@
 <body>
   <div class='wrapper'>
 
+    <!-- sounds -->
+    <audio src='assets/sounds/bubbles.mp3' id='bubbleAudio'></audio>
+    <audio src='assets/sounds/squelch.mp3' id='squelchAudio'></audio>
+    <audio src='assets/sounds/drum.mp3' id='drumAudio'></audio>
+    <audio src='assets/sounds/cymbal.mp3' id='cymbalAudio'></audio>
+    <audio src='assets/sounds/typing.mp3' id='typingAudio'></audio>
+    <audio src='assets/sounds/printing.mp3' id='printingAudio'></audio>
+    <audio src='assets/sounds/draw.mp3' id='drawAudio'></audio>
+    <audio src='assets/sounds/erase.mp3' id='eraseAudio'></audio>
+    <audio src='assets/sounds/sand.mp3' id='sandAudio'></audio>
+    <audio src='assets/sounds/splash.mp3' id='splashAudio'></audio>
+    <audio src='assets/sounds/balloon.mp3' id='balloonAudio'></audio>
+    <audio src='assets/sounds/pop.mp3' id='popAudio'></audio>
+    <audio src='assets/sounds/whoosh.mp3' id='whooshAudio'></audio>
+    <audio src='assets/sounds/descend.mp3' id='descendAudio'></audio>
+    <audio src='assets/sounds/glitch.mp3' id='glitchAudio'></audio>
+    <audio src='assets/sounds/rollerblade.mp3' id='rollerbladeAudio'></audio>
+    <audio src='assets/sounds/sword.mp3' id='swordAudio'></audio>
+    <audio src='assets/sounds/zoom.mp3' id='zoomAudio'></audio>
+    <!-- end of sounds -->
+
     <!-- navigation -->
     <div class="topnav" id="myTopnav">
-        <img class='eyeImg eyeImgNav' src='assets/img/eye.png' alt='eye illustration'>
-        <!-- <a href="#contact" data-modal="modal-three" id='disappear'></a> -->
-        <a href="#contact" data-modal="modal-three" class='closeNav navFix navHoverPink'>Contact</a>
-        <a href="#news" data-modal="modal-two" class='closeNav navHoverTurq'>Acknowledgements</a>
-        <a href="#about" data-modal="modal-one" class='closeNav'>About</a>
-        <a href="javascript:void(0);" class="icon" onclick="showNav()">
-          <i class="material-icons md-36">menu</i>
-        </a>
+      <img class='eyeImg eyeImgNav' src='assets/img/eye.png' alt='eye illustration'>
+      <!-- <a href="#contact" data-modal="modal-three" id='disappear'></a> -->
+      <a href="#contact" data-modal="modal-three" class='closeNav navFix navHoverPink'>Contact</a>
+      <a href="#news" data-modal="modal-two" class='closeNav navHoverTurq'>Acknowledgements</a>
+      <a href="#about" data-modal="modal-one" class='closeNav'>About</a>
+      <a href="javascript:void(0);" class="icon" onclick="showNav()">
+        <i class="material-icons md-36">menu</i>
+      </a>
     </div>
     <!-- end of navigation -->
 
@@ -80,87 +101,71 @@
 
     <div class='timeline'>
       <div class='container left purp'>
-        <div class='content fake-box purple bubbleSquelch'>
+        <div class='content fake-box purple soundEffect'>
           <i class='material-icons md-24'>favorite border</i>
           <h2>Open Tik Tok</h2>
           <i class='material-icons md-24 bottom-right'>favorite border</i>
-          <audio src='assets/sounds/bubbles.mp3' id='bubbleAudio'></audio>
-          <audio src='assets/sounds/squelch.mp3' id='squelchAudio'></audio>
         </div>
       </div>
 
       <div class='container right pinky'>
-        <div class='content fake-box pink whooshDescend'>
+        <div class='content fake-box pink soundEffect'>
           <p>
             <i class="material-icons centered-icon md-48">visibility</i>
           </p>
           <h2>Tap on the profile icon in the bottom right corner</h2>
-          <audio src='assets/sounds/whoosh.mp3' id='whooshAudio'></audio>
-          <audio src='assets/sounds/descend.mp3' id='descendAudio'></audio>
         </div>
       </div>
 
       <div class='container left yellowish'>
-        <div class='content fake-box yellow balloonPop'>
+        <div class='content fake-box yellow soundEffect'>
           <h2>Go to "Edit Profile"</h2>
           <p>
             <i class="material-icons md-48">mode_edit</i>
           </p>
-          <audio src='assets/sounds/balloon.mp3' id='balloonAudio'></audio>
-          <audio src='assets/sounds/pop.mp3' id='popAudio'></audio>
         </div>
       </div>
 
       <div class='container right'>
-        <div class='content fake-box sandSplash'>
+        <div class='content fake-box soundEffect'>
           <i class="material-icons md-36 top-right">add</i>
           <h2>Select "Add Instagram"</h2>
           <i class="material-icons md-24">add</i>
-          <audio src='assets/sounds/sand.mp3' id='sandAudio'></audio>
-          <audio src='assets/sounds/splash.mp3' id='splashAudio'></audio>
         </div>
       </div>
 
       <div class='container left turq'>
-        <div class='content fake-box turquoise drawErase'>
+        <div class='content fake-box turquoise soundEffect'>
           <p>
             <i class="material-icons md-36">login</i>
           </p>
           <h2>You should see the Instagram login page</h2>
-          <audio src='assets/sounds/draw.mp3' id='drawAudio'></audio>
-          <audio src='assets/sounds/erase.mp3' id='eraseAudio'></audio>
         </div>
       </div>
 
       <div class='container right purp'>
-        <div class='content fake-box purple typingPrinting'>
+        <div class='content fake-box purple soundEffect'>
           <h2>Enter the Instagram login info</h2>
           <p>
             <i class="material-icons md-36">lock_open</i>
           </p>
-          <audio src='assets/sounds/typing.mp3' id='typingAudio'></audio>
-          <audio src='assets/sounds/printing.mp3' id='printingAudio'></audio>
         </div>
       </div>
 
       <div class='container left pinky'>
-        <div class='content fake-box pink drumCymbal'>
+        <div class='content fake-box pink soundEffect'>
           <p>
             <i class="material-icons md-48">verified</i>
           </p>
           <h2>Select Save info</h2>
-          <audio src='assets/sounds/drum.mp3' id='drumAudio'></audio>
-          <audio src='assets/sounds/cymbal.mp3' id='cymbalAudio'></audio>
         </div>
       </div>
 
       <div class='container right yellowish'>
-        <div class='content fake-box yellow toastApplause'>
+        <div class='content fake-box yellow soundEffect'>
           <i class="material-icons md-24">grade</i>
           <h2>Tap "Authorize"</h2>
           <i class="material-icons top-right md-24">grade</i>
-          <audio src='assets/sounds/toast.mp3' id='toastAudio'></audio>
-          <audio src='assets/sounds/applause.mp3' id='applauseAudio'></audio>
         </div>
       </div>
     </div>
