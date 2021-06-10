@@ -1,107 +1,53 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-  // bubbleSquelch
-  const bubbleBtn = document.querySelector('.bubbleSquelch');
-  let bubbles = document.querySelector('#bubbleAudio');
-  bubbleBtn.addEventListener('click', () => {
-    bubbles.play();
+  window.addEventListener('load', function() {
+    const startupModal = document.getElementById('modal-one');
+    startupModal.classList.add('open');
+
+    const startupExits = startupModal.querySelectorAll('.modal-exit');
+    startupExits.forEach(function(exit) {
+      exit.addEventListener('click', function(event) {
+        event.preventDefault();
+        startupModal.classList.remove('open');
+      });
+    });
   });
 
-  const squelchBtn = document.querySelector('.bubbleSquelch');
-  let squelch = document.querySelector('#squelchAudio');
-  squelchBtn.addEventListener('mouseenter', () => {
-    squelch.play();
-  });
+  let sound1 = document.querySelector('#balloonAudio');
+  let sound2 = document.querySelector('#bubbleAudio');
+  let sound3 = document.querySelector('#cymbalAudio');
+  let sound4 = document.querySelector('#descendAudio');
+  let sound5 = document.querySelector('#drawAudio');
+  let sound6 = document.querySelector('#drumAudio');
+  let sound7 = document.querySelector('#eraseAudio');
+  let sound8 = document.querySelector('#glitchAudio');
+  let sound9 = document.querySelector('#popAudio');
+  let sound10 = document.querySelector('#printingAudio');
+  let sound11 = document.querySelector('#rollerbladeAudio');
+  let sound12 = document.querySelector('#sandAudio');
+  let sound13 = document.querySelector('#splashAudio');
+  let sound14 = document.querySelector('#squelchAudio');
+  let sound15 = document.querySelector('#swordAudio');
+  let sound16 = document.querySelector('#typingAudio');
+  let sound17 = document.querySelector('#whooshAudio');
+  let sound18 = document.querySelector('#zoomAudio');
 
-  // whooshDescend
-  const descendBtn = document.querySelector('.whooshDescend');
-  let descend = document.querySelector('#descendAudio');
-  descendBtn.addEventListener('click', () => {
-    descend.play();
-  });
+  let soundsArray1 = [sound1, sound2, sound3, sound4, sound5, sound6, sound7, sound8, sound9, sound10, sound11, sound12, sound13, sound14, sound15, sound16, sound17, sound18];
+  
+  const soundBtns = document.querySelectorAll('.soundEffect');
+  
+  soundBtns.forEach(function(trigger) {
+    trigger.addEventListener('click', function(event) {
+      let randomNum = Math.floor(Math.random() * soundsArray1.length);
+      event.preventDefault();
+      soundsArray1[randomNum].play();
+    });
 
-  const whooshBtn = document.querySelector('.whooshDescend');
-  let whoosh = document.querySelector('#whooshAudio');
-  whooshBtn.addEventListener('mouseenter', () => {
-    whoosh.play();
-  });
-
-  // balloonPop
-  const popBtn = document.querySelector('.balloonPop');
-  let pop = document.querySelector('#popAudio');
-  popBtn.addEventListener('click', () => {
-    pop.play();
-  });
-
-  const balloonBtn = document.querySelector('.balloonPop');
-  let balloon = document.querySelector('#balloonAudio');
-  balloonBtn.addEventListener('mouseenter', () => {
-    balloon.play();
-  });
-
-  // sandSplash
-  const splashBtn = document.querySelector('.sandSplash');
-  let splash = document.querySelector('#splashAudio');
-  splashBtn.addEventListener('click', () => {
-    splash.play();
-  });
-
-  const sandBtn = document.querySelector('.sandSplash');
-  let sand = document.querySelector('#sandAudio');
-  sandBtn.addEventListener('mouseenter', () => {
-    sand.play();
-  });
-
-  // drawErase
-  const eraseBtn = document.querySelector('.drawErase');
-  let erase = document.querySelector('#eraseAudio');
-  eraseBtn.addEventListener('click', () => {
-    erase.play();
-  });
-
-  const drawBtn = document.querySelector('.drawErase');
-  let draw = document.querySelector('#drawAudio');
-  drawBtn.addEventListener('mouseenter', () => {
-    draw.play();
-  });
-
-  // typingPrinting
-  const printingBtn = document.querySelector('.typingPrinting');
-  let printing = document.querySelector('#printingAudio');
-  printingBtn.addEventListener('click', () => {
-    printing.play();
-  });
-
-  const typingBtn = document.querySelector('.typingPrinting');
-  let typing = document.querySelector('#typingAudio');
-  typingBtn.addEventListener('mouseenter', () => {
-    typing.play();
-  });
-
-  // drumCymbal
-  const cymbalBtn = document.querySelector('.drumCymbal');
-  let cymbal = document.querySelector('#cymbalAudio');
-  cymbalBtn.addEventListener('click', () => {
-    cymbal.play();
-  });
-
-  const drumBtn = document.querySelector('.drumCymbal');
-  let drum = document.querySelector('#drumAudio');
-  drumBtn.addEventListener('mouseenter', () => {
-    drum.play();
-  });
-
-  // toastApplause
-  const applauseBtn = document.querySelector('.toastApplause');
-  let applause = document.querySelector('#applauseAudio');
-  applauseBtn.addEventListener('click', () => {
-    applause.play();
-  });
-
-  const toastBtn = document.querySelector('.toastApplause');
-  let toast = document.querySelector('#toastAudio');
-  toastBtn.addEventListener('mouseenter', () => {
-    toast.play();
+    trigger.addEventListener('mouseenter', function(event) {
+      let randomNum2 = Math.floor(Math.random() * soundsArray1.length);
+      event.preventDefault();
+      soundsArray1[randomNum2].play();
+    });
   });
 
   const modals = document.querySelectorAll('[data-modal]');
@@ -119,19 +65,6 @@ document.addEventListener("DOMContentLoaded", function(){
           event.preventDefault();
           modal.classList.remove('open');
         });
-      });
-    });
-  });
-
-  window.addEventListener('load', function() {
-    const startupModal = document.getElementById('modal-one');
-    startupModal.classList.add('open');
-
-    const startupExits = startupModal.querySelectorAll('.modal-exit');
-    startupExits.forEach(function(exit) {
-      exit.addEventListener('click', function(event) {
-        event.preventDefault();
-        startupModal.classList.remove('open');
       });
     });
   });
