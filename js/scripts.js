@@ -13,6 +13,20 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   });
 
+  let toggleMute = Array.from(document.querySelectorAll('audio')).forEach(element => element.muted = false);
+  const audioStop = document.getElementById("pause");
+  const audioPlay = document.getElementById("play");
+
+  audioStop.addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleMute = Array.from(document.querySelectorAll('audio')).forEach(element => element.muted = true);
+  });
+
+  audioPlay.addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleMute = Array.from(document.querySelectorAll('audio')).forEach(element => element.muted = false);
+  });
+
   let sound1 = document.querySelector('#balloonAudio');
   let sound2 = document.querySelector('#bubbleAudio');
   let sound3 = document.querySelector('#cymbalAudio');
