@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='css/styles.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <script src='https://kit.fontawesome.com/c9d96554ba.js' crossorigin='anonymous'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src='js/scripts.js'></script>
+  <title>Vertical Timeline</title>
+  <link rel='shortcut icon' type='image/jpg' href='assets/img/eye.png'/>
+</head>
+<body>
+  <div class='wrapper'>
+
+    <!-- navigation -->
+    <div class="topnav" id="myTopnav">
+        <img class='eyeImg eyeImgNav' src='assets/img/eye.png' alt='eye illustration'>
+        <!-- <a href="#contact" data-modal="modal-three" id='disappear'></a> -->
+        <a href="#contact" data-modal="modal-three" class='closeNav navFix navHoverPink'>Contact</a>
+        <a href="#news" data-modal="modal-two" class='closeNav navHoverTurq'>Acknowledgements</a>
+        <a href="#about" data-modal="modal-one" class='closeNav'>About</a>
+        <a href="javascript:void(0);" class="icon" onclick="showNav()">
+          <i class="material-icons md-36">menu</i>
+        </a>
+    </div>
+    <!-- end of navigation -->
+
+    <!-- modals -->
+    <div class="modal" id="modal-one">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container">
+        <h1>Welcome!</h1>
+        <p>This page is... </p>
+        <button class="modal-close modal-exit">
+          <i class="material-icons md-48 cancelHover">cancel</i>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-two">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container turqModalContainer">
+        <h1>Test Modal</h1>
+        <h2>test bullshit</h2>
+        <button class="modal-close modal-exit">
+          <i class="material-icons md-48 cancelHover">cancel</i>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-three">
+      <div class="modal-bg modal-exit"></div>
+      <div class="modal-container pinkModalContainer">
+        <h1>Test Modal three</h1>
+        <img class='chloe' src='assets/img/chloe.jpg' alt='photo of Chloe Loveall'>
+        <h2>test bullshit</h2>
+        <button class="modal-close turqCursor modal-exit">
+          <i class="material-icons md-48 cancelHover">cancel</i>
+        </button>
+      </div>
+    </div>
+    <!-- end of modals -->
+
+    <!-- header -->
+    <div>
+      <h1>How to add 
+        <br />
+        <span class='split-h1'><span class='instagram'>Instagram</span> to <span class='tiktok'>Tik Tok?</span></span>
+      </h1>
+    </div>
+    <!-- end of header -->
+    
+    <!-- timeline  -->
+    <img class='tiktokImg' src='assets/img/tik-tok-logo.png' alt='Tik Tok Logo'>
+
+    <div class='line'></div>
+
+    <div class='timeline'>
+      <div class='container left purp'>
+        <div class='content fake-box purple bubbleSquelch'>
+          <i class='material-icons md-24'>favorite border</i>
+          <h2>Open Tik Tok</h2>
+          <i class='material-icons md-24 bottom-right'>favorite border</i>
+          <audio src='assets/sounds/bubbles.mp3' id='bubbleAudio'></audio>
+          <audio src='assets/sounds/squelch.mp3' id='squelchAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container right pinky'>
+        <div class='content fake-box pink whooshDescend'>
+          <p>
+            <i class="material-icons centered-icon md-48">visibility</i>
+          </p>
+          <h2>Tap on the profile icon in the bottom right corner</h2>
+          <audio src='assets/sounds/whoosh.mp3' id='whooshAudio'></audio>
+          <audio src='assets/sounds/descend.mp3' id='descendAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container left yellowish'>
+        <div class='content fake-box yellow balloonPop'>
+          <h2>Go to "Edit Profile"</h2>
+          <p>
+            <i class="material-icons md-48">mode_edit</i>
+          </p>
+          <audio src='assets/sounds/balloon.mp3' id='balloonAudio'></audio>
+          <audio src='assets/sounds/pop.mp3' id='popAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container right'>
+        <div class='content fake-box sandSplash'>
+          <i class="material-icons md-36 top-right">add</i>
+          <h2>Select "Add Instagram"</h2>
+          <i class="material-icons md-24">add</i>
+          <audio src='assets/sounds/sand.mp3' id='sandAudio'></audio>
+          <audio src='assets/sounds/splash.mp3' id='splashAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container left turq'>
+        <div class='content fake-box turquoise drawErase'>
+          <p>
+            <i class="material-icons md-36">login</i>
+          </p>
+          <h2>You should see the Instagram login page</h2>
+          <audio src='assets/sounds/draw.mp3' id='drawAudio'></audio>
+          <audio src='assets/sounds/erase.mp3' id='eraseAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container right purp'>
+        <div class='content fake-box purple typingPrinting'>
+          <h2>Enter the Instagram login info</h2>
+          <p>
+            <i class="material-icons md-36">lock_open</i>
+          </p>
+          <audio src='assets/sounds/typing.mp3' id='typingAudio'></audio>
+          <audio src='assets/sounds/printing.mp3' id='printingAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container left pinky'>
+        <div class='content fake-box pink drumCymbal'>
+          <p>
+            <i class="material-icons md-48">verified</i>
+          </p>
+          <h2>Select Save info</h2>
+          <audio src='assets/sounds/drum.mp3' id='drumAudio'></audio>
+          <audio src='assets/sounds/cymbal.mp3' id='cymbalAudio'></audio>
+        </div>
+      </div>
+
+      <div class='container right yellowish'>
+        <div class='content fake-box yellow toastApplause'>
+          <i class="material-icons md-24">grade</i>
+          <h2>Tap "Authorize"</h2>
+          <i class="material-icons top-right md-24">grade</i>
+          <audio src='assets/sounds/toast.mp3' id='toastAudio'></audio>
+          <audio src='assets/sounds/applause.mp3' id='applauseAudio'></audio>
+        </div>
+      </div>
+    </div>
+    
+    <div class='line'></div>
+    
+    <img class='ig-round' src='assets/img/instagram-logo.png' alt='Instagram Logo'>
+    <!-- end of timeline  -->
+
+    <!-- footer -->
+    <footer>
+      <div class='row'>
+        <div class='column'>
+          <!-- <img id='plane' src='assets/img/plane.png' alt='paper airplane'> -->
+        </div>
+
+        <div class='column'>
+          <img class='eyeImg' src='assets/img/eye.png' alt='eye illustration'>
+        </div>
+      </div>
+
+      <div class='subFooter'>
+        <div class='social'>
+          <ul>
+            <li><a href="https://www.instagram.com/chloeloveall/" target="_blank" rel="noopener noreferrer"><i class='fab fa-instagram'></i></a></li>
+            <li><a href="https://linked.in/chloeloveall" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin"></span></a></li>
+            <li><a href="https://github.com/chloeloveall" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
+          </ul>
+        </div>
+        <div class='copyright'>
+          <p>&copy; Copyright 2021 <a href='mailto:chloeloveall@protonmail.com'>Chloe Loveall</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+  </div>
+</body>
+</html>
