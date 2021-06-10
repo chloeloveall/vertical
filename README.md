@@ -34,7 +34,7 @@ The project is a responsive, mobile-friendly vertical timeline with sound effect
 
 ## Preview
 
-Live preview: [Vertical](https://vertical.vercel.app/)
+Live preview: [Vertical](https://vertical-timeline.vercel.app/)
 
 Deployed on [Vercel](https://vercel.com)
 
