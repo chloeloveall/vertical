@@ -122,4 +122,17 @@ document.addEventListener("DOMContentLoaded", function(){
       });
     });
   });
+
+  window.addEventListener('load', function() {
+    const startupModal = document.getElementById('modal-one');
+    startupModal.classList.add('open');
+
+    const startupExits = startupModal.querySelectorAll('.modal-exit');
+    startupExits.forEach(function(exit) {
+      exit.addEventListener('click', function(event) {
+        event.preventDefault();
+        startupModal.classList.remove('open');
+      });
+    });
+  });
 });
