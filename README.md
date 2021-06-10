@@ -124,6 +124,7 @@ Contributions are what make the open source community such an amazing place to b
 * [SVG Backgrounds](https://www.svgbackgrounds.com/#confetti-doodles/)
 * [Tik Tok Animation](https://codepen.io/JohannesKantz/pen/YzqXpRR/)
 * [Vercel](https://vercel.com/)
+* [Zapsplat: Free sound effects & royalty free music](https://www.zapsplat.com/)
 
 ## Contact Information
 
