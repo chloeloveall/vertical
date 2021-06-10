@@ -13,6 +13,21 @@
   <link rel='shortcut icon' type='image/jpg' href='assets/img/eye.png'/>
 </head>
 <body>
+  <div class="miniHeader">
+    <div class="slide-right">
+      <p><b>Welcome! I hope you have fun!</b></p>
+    </div>
+    <div class="audioControlsContainer">
+      <b>Sound Controls:</b>
+      <button class="audioButtons" id="play">
+        <i class="material-icons md-24">play_arrow</i>
+      </button> 
+      <button class="audioButtons" id="pause">
+        <i class="material-icons md-24">pause</i>
+      </button> 
+    </div>
+  </div>
+    
   <div class='wrapper'>
 
     <!-- sounds -->
@@ -53,8 +68,9 @@
     <div class="modal" id="modal-one">
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container">
-        <h1>Welcome!</h1>
-        <p>This page is... </p>
+        <h1>Hello!</h1>
+        <p>This page was created as a bit of a "sandbox," so I could try new CSS styling, play with animations, and experiment with sound. I hope you have as much fun visiting my website as I had creating it!</p>
+        <p>I suggest keeping you sound on and clicking on things to see what happens, but if you're not in the mood for audio... there's a pause button in the top right corner.</p>
         <button class="modal-close modal-exit">
           <i class="material-icons md-48 cancelHover">cancel</i>
         </button>
@@ -64,8 +80,14 @@
     <div class="modal" id="modal-two">
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container turqModalContainer">
-        <h1>Test Modal</h1>
-        <h2>test bullshit</h2>
+        <h1>Very Specials Thanks to:</h1>
+        <p><a href="https://cssgradient.io/" target="_blank" rel="noopener noreferrer">CSS Gradient</a></p>
+        <p><a href="http://www.heropatterns.com/" target="_blank" rel="noopener noreferrer">Hero Patterns</a></p>
+        <p><a href="https://www.svgbackgrounds.com/" target="_blank" rel="noopener noreferrer">SVG Backgrounds</a></p>
+        <p><a href="https://blog.codepen.io/2016/05/13/new-instagram-logo-in-css-four-ways/" target="_blank" rel="noopener noreferrer">The New Instagram Logo in CSS, Four Ways</a></p>
+        <p><a href="https://www.freepik.com/vectors/flower" target="_blank" rel="noopener noreferrer">Vectors created by: gohsantosa2 on freepik.com</a></p>
+        <p><a href="https://www.w3schools.com/howto/howto_css_timeline.asp" target="_blank" rel="noopener noreferrer">W3 Schools: CSS Timeline Tutorial</a></p>
+        <p><a href="https://www.zapsplat.com/" target="_blank" rel="noopener noreferrer">Zapsplat: Free sound effects</a></p>
         <button class="modal-close modal-exit">
           <i class="material-icons md-48 cancelHover">cancel</i>
         </button>
@@ -75,9 +97,20 @@
     <div class="modal" id="modal-three">
       <div class="modal-bg modal-exit"></div>
       <div class="modal-container pinkModalContainer">
-        <h1>Test Modal three</h1>
+        <h1>I'm Chloe!</h1>
         <img class='chloe' src='assets/img/chloe.jpg' alt='photo of Chloe Loveall'>
-        <h2>test bullshit</h2>
+        <p>Nice to meet you! I'm software developer in the Seattle area who loves programming and design. I recently graduated from <b><a href="https://www.epicodus.com/">Epicodus</a></b> and I'm currently an intern at <b><a href="https://www.hubb.me/">Hubb</a></b>.</p>
+        <p>Feel free to reach out if you're interested in working together, have questions about this project, or if you just want to nerd out about programming!</p>
+        <div class='copyright'>
+          <p><b>Email me:</b> <a href='mailto:chloeloveall@protonmail.com'>chloe.loveall@protonmail.com</a></p>
+        </div>
+        <div class='social'>
+          <ul>
+            <li><a href="https://www.instagram.com/chloeloveall/" target="_blank" rel="noopener noreferrer"><i class='fab fa-instagram'></i></a></li>
+            <li><a href="https://linked.in/chloeloveall" target="_blank" rel="noopener noreferrer"><span class="fab fa-linkedin"></span></a></li>
+            <li><a href="https://github.com/chloeloveall" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
+          </ul>
+        </div>
         <button class="modal-close turqCursor modal-exit">
           <i class="material-icons md-48 cancelHover">cancel</i>
         </button>
@@ -178,7 +211,12 @@
     <!-- footer -->
     <footer>
       <div class='row'>
-        <div class='column'>
+        <div class='column otherProjects'>
+          <h3>Other Projects</h3>
+          <p><a href="https://booch-shine-redux.vercel.app/" target="_blank" rel="noopener noreferrer">Booch Shine: Tap Room Keg Tracker</a></p>
+          <p><a href="https://quotable-generator.vercel.app/" target="_blank" rel="noopener noreferrer">Quotable: Random Quote Generator</a></p>
+          <p><a href="https://tipped-neon.vercel.app/" target="_blank" rel="noopener noreferrer">Tipped: Tip Calculator</a></p>
+          <p><a href="https://scratch.vercel.app/" target="_blank" rel="noopener noreferrer">Scatch: Currency Exchanger</a></p>
           <!-- <img id='plane' src='assets/img/plane.png' alt='paper airplane'> -->
         </div>
 
@@ -196,7 +234,7 @@
           </ul>
         </div>
         <div class='copyright'>
-          <p>&copy; Copyright 2021 <a href='mailto:chloeloveall@protonmail.com'>Chloe Loveall</a></p>
+          <p>&copy; Copyright 2021 <b><a href='mailto:chloeloveall@protonmail.com'>Chloe Loveall</a></b></p>
         </div>
       </div>
     </footer>
