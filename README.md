@@ -53,6 +53,10 @@ Deployed on [Vercel](https://vercel.com)
 | **Design Inspo Image**                        | **Design Samples**                              |
 | ![design inspo](assets/img/design-inspo.jpeg) | ![design samples](assets/img/design-samples.png)|
 
+|                                                       |                                                        |
+| ----------------------------------------------------- | ------------------------------------------------------ |
+| **Mobile View**                                       | **Tablet View**                                        |
+| ![mobile view](assets/img/mobile-view-screenshot.png) | ![tablet view](assets/img/tablet-view-screentshot.png) |
 
 ## Setup and Installation Requirements
 
